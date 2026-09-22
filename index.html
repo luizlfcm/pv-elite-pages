@@ -66,6 +66,11 @@ fbq('track', 'PageView');
 
   /* ===== HERO ===== */
   .hero { padding: 56px 0 40px; text-align: center; }
+  .audience-bar {
+    display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.01em;
+    color: #FCD34D; background: rgba(245,158,11,0.14); border: 1px solid rgba(245,158,11,0.35);
+    padding: 8px 16px; border-radius: 999px; margin-bottom: 20px; max-width: 320px;
+  }
   .hero h1 {
     font-size: clamp(26px, 7vw, 38px); font-weight: 700; line-height: 1.2; margin: 0 0 16px;
   }
@@ -273,7 +278,12 @@ fbq('track', 'PageView');
   .plan h3 { font-size: 19px; margin: 0; }
   .plan .price { font-size: 24px; font-weight: 700; font-family: 'Space Grotesk', sans-serif; }
   .plan .price small { font-size: 13px; color: var(--muted); font-weight: 500; }
-  .plan .desc { font-size: 13px; color: var(--muted); margin-bottom: 14px; }
+  .plan .desc {
+    font-size: 13.5px; color: #E5DFFA; line-height: 1.5; margin-bottom: 16px;
+    background: #0E0818; border-left: 3px solid var(--border); border-radius: 8px;
+    padding: 12px 14px;
+  }
+  .plan.destaque .desc { border-left-color: var(--pink); }
   .plan ul { list-style: none; margin: 0 0 18px; padding: 0; display: flex; flex-direction: column; gap: 8px; }
   .plan li { font-size: 13.5px; display: flex; gap: 8px; align-items: flex-start; color: #E5DFFA; }
   .plan li .check { color: var(--success); flex-shrink: 0; margin-top: 1px; }
@@ -394,13 +404,15 @@ fbq('track', 'PageView');
   <!-- HERO + RACE -->
   <section class="hero">
     <div class="wrap">
-      <h1>Seu produto está pronto. Sua <span class="grad">página de vendas</span> também pode estar.</h1>
-      <p class="sub">Pare de perder dias tentando montar sua página e coloque sua oferta no ar com uma estrutura profissional, rápida e pensada pra vender — sem complicação, sem template genérico e sem gastar uma fortuna.</p>
+      <div class="audience-bar">Vende ebook, curso ou mentoria e está preso na página?</div>
+
+      <h1>Seu produto está pronto. Sua <span class="grad">página de vendas</span> fica pronta em até 3 dias úteis.</h1>
+      <p class="sub">Pare de perder tempo tentando montar sua página sozinho. Criamos uma página profissional, personalizada e pensada pra vender no celular, enquanto você foca no que realmente importa: seu produto.</p>
 
       <div class="hero-checks">
         <span>✓ Entrega em até 3 dias úteis</span>
-        <span>✓ Estrutura pensada em conversão</span>
-        <span>✓ 100% otimizada pro mobile</span>
+        <span>✓ Estrutura pensada pra conversão</span>
+        <span>✓ Design personalizado e responsivo</span>
       </div>
 
       <div class="price-tag">A partir de <b>R$67</b></div>
@@ -645,46 +657,50 @@ fbq('track', 'PageView');
         <div class="plan">
           <h3>Elite Start</h3>
           <div class="plan-top"><span></span><span class="price">R$67</span></div>
-          <div class="desc">Ideal pra quem já tem uma oferta e precisa de uma página profissional</div>
+          <div class="desc">Ideal pra quem já tem domínio e sabe executar — só precisa de ajuda pra deixar tudo certo.</div>
           <ul>
             <li><span class="check">✓</span>1 página de vendas responsiva</li>
             <li><span class="check">✓</span>Entrega em até 3 dias úteis</li>
-            <li><span class="check">✓</span>1 revisão gratuita inclusa</li>
+            <li><span class="check">✓</span>1 revisão gratuita (até 30 dias)</li>
             <li><span class="check">✓</span>Garantia de 7 dias</li>
+            <li><span class="check">✓</span>Pixel (Meta/Google) e WhatsApp já instalados na página</li>
           </ul>
-          <p class="plan-note">Após a compra, você recebe o formulário de briefing pra iniciarmos seu projeto.</p>
+          <p class="plan-note">Você recebe a página pronta pra publicar — a instalação na sua hospedagem é feita por você (te damos suporte, não fazemos a execução). Você informa o ID do Pixel e o link do checkout; nós inserimos na página, mas não criamos essas contas.</p>
           <a href="#contato" class="btn-3d small" style="width:100%;">Quero este</a>
-          <div class="upsell-tag">💡 Por +R$30, leve o Pro: 3 páginas e Pixel</div>
+          <div class="upsell-tag">💡 Por +R$30, leve o Pro: 3 páginas e nós configuramos o Pixel pra você</div>
         </div>
 
         <div class="plan destaque">
-          <span class="tag-pop">Indicado pra tráfego pago</span>
+          <span class="tag-pop">Recomendado</span>
           <h3>Elite Pro</h3>
           <div class="plan-top"><span></span><span class="price">R$97</span></div>
-          <div class="desc">Sua oferta com estrutura completa pra anunciar</div>
+          <div class="desc">Ideal se você não sabe ou tem dúvida técnica e quer deixar a execução na mão de um profissional.</div>
           <ul>
             <li><span class="check">✓</span>3 páginas: vendas + obrigado + upsell</li>
-            <li><span class="check">✓</span>Pixel configurado (Meta, TikTok ou Google, à sua escolha)</li>
-            <li><span class="check">✓</span>2 revisões gratuitas</li>
+            <li><span class="check">✓</span>2 revisões gratuitas (até 60 dias)</li>
             <li><span class="check">✓</span>Garantia de 7 dias</li>
+            <li><span class="check">✓</span>Nossa equipe cria e configura o Pixel (Meta, Google ou TikTok — você escolhe um)</li>
+            <li><span class="check">✓</span>Nós subimos a página pronta na sua hospedagem</li>
           </ul>
-          <p class="plan-note">Após a compra, você recebe o formulário de briefing pra iniciarmos seu projeto.</p>
+          <p class="plan-note">Você fornece o acesso (login e senha) da sua hospedagem, e nós fazemos a instalação. O apontamento de domínio fica por sua conta — podemos orientar, mas a execução é sua.</p>
           <a href="#contato" class="btn-3d small" style="width:100%;">Quero este</a>
-          <div class="upsell-tag">💡 Por +R$50, leve o Premium: copy revisada + hospedagem</div>
+          <div class="upsell-tag">💡 Por +R$50, leve o Premium: cuidamos até do domínio e da hospedagem</div>
         </div>
 
         <div class="plan">
           <span class="tag-pop-outline">Experiência mais completa</span>
           <h3>Elite Premium</h3>
           <div class="plan-top"><span></span><span class="price">R$147</span></div>
-          <div class="desc">Cuidamos de tudo pra você</div>
+          <div class="desc">Deixe tudo na mão da nossa equipe, com suporte exclusivo, e foque só em ver as vendas entrarem.</div>
           <ul>
             <li><span class="check">✓</span>Tudo do Elite Pro</li>
-            <li><span class="check">✓</span>Revisão profissional da copy</li>
-            <li><span class="check">✓</span>2 meses de hospedagem grátis</li>
-            <li><span class="check">✓</span>Prioridade na fila de produção</li>
+            <li><span class="check">✓</span>Apontamento de domínio feito por nós</li>
+            <li><span class="check">✓</span>Prioridade na execução</li>
+            <li><span class="check">✓</span>2 meses de hospedagem inclusa</li>
+            <li><span class="check">✓</span>Revisão completa da copy por especialista, focada em máxima conversão</li>
+            <li><span class="check">✓</span>Suporte exclusivo via WhatsApp</li>
           </ul>
-          <p class="plan-note">Após a compra, você recebe o formulário de briefing pra iniciarmos seu projeto.</p>
+          <p class="plan-note">Aqui cuidamos de ponta a ponta: domínio, hospedagem e copy — você só precisa aprovar.</p>
           <a href="#contato" class="btn-3d small" style="width:100%;">Quero este</a>
         </div>
 
@@ -729,7 +745,7 @@ fbq('track', 'PageView');
       </details>
       <details class="faq-item">
         <summary>Preciso ter domínio e hospedagem?<span class="chev">▾</span></summary>
-        <p>Se você já tem domínio e hospedagem compatível, usamos sua estrutura. Se ainda não tem, oferecemos alternativas de publicação e hospedagem gerenciada — o Elite Premium já inclui 2 meses grátis.</p>
+        <p>Sim, em todos os planos você precisa ter (ou providenciar) seu próprio domínio. Sobre a hospedagem: no Elite Start, você mesmo instala a página (com nosso suporte); no Elite Pro, nós subimos a página na sua hospedagem, mas você fornece o acesso; no Elite Premium, incluímos 2 meses de hospedagem nossa e cuidamos até do apontamento de domínio.</p>
       </details>
       <details class="faq-item">
         <summary>Existe alguma mensalidade obrigatória?<span class="chev">▾</span></summary>
