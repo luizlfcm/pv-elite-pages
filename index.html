@@ -81,6 +81,16 @@ fbq('track', 'PageView');
   .dor-text { max-width: 520px; margin: 0 auto; }
   .dor-text p { font-size: 15px; line-height: 1.7; color: #E5DFFA; margin: 0 0 16px; }
   .dor-text p strong { color: #fff; }
+  .dor-intro { text-align: center; font-size: 16px; font-weight: 600; color: #fff; margin: 0 0 16px; }
+  .dor-list { list-style: none; margin: 0 auto 20px; padding: 0; max-width: 440px; display: flex; flex-direction: column; gap: 12px; }
+  .dor-list li {
+    display: flex; align-items: flex-start; gap: 10px; font-size: 14.5px; color: #E5DFFA;
+    background: rgba(248,113,113,0.06); border: 1px solid rgba(248,113,113,0.18);
+    border-radius: 10px; padding: 12px 14px;
+  }
+  .dor-list .x { color: #F87171; font-weight: 700; flex-shrink: 0; }
+  .dor-punch { text-align: center; font-size: 15px; line-height: 1.6; color: #E5DFFA; max-width: 460px; margin: 0 auto 12px; }
+  .dor-punch strong { color: #fff; }
 
   /* ===== 3D BUTTON ===== */
   .btn-3d {
@@ -419,11 +429,15 @@ fbq('track', 'PageView');
         <h2>Você já fez a parte difícil</h2>
         <p>Agora falta colocar sua oferta no ar</p>
       </div>
-      <div class="dor-text">
-        <p>Seu produto está pronto, mas você ainda está perdendo tempo tentando montar uma página de vendas? Ou pior: já está anunciando, mas sua página demora pra carregar, fica desorganizada no celular e não apresenta sua oferta como deveria?</p>
-        <p>Enquanto você tenta resolver layout, botões, hospedagem e configurações, seu produto continua esperando pra ser vendido. E cada visitante que abandona a página antes de conhecer sua oferta é uma venda que você já pagou pra atrair.</p>
-        <p><strong>Você não precisa virar desenvolvedor, designer ou especialista em programação pra vender seu produto.</strong> Precisa de uma página profissional que faça esse trabalho por você.</p>
-      </div>
+      <p class="dor-intro">Seu produto está pronto. Só que:</p>
+      <ul class="dor-list">
+        <li><span class="x">✗</span> Você trava tentando montar a página sozinho</li>
+        <li><span class="x">✗</span> Ou já anuncia, mas a página demora pra carregar</li>
+        <li><span class="x">✗</span> Fica desorganizada no celular</li>
+        <li><span class="x">✗</span> Não apresenta sua oferta como deveria</li>
+      </ul>
+      <p class="dor-punch">Cada visitante que desiste é uma venda que você já pagou pra atrair.</p>
+      <p class="dor-punch"><strong>Você não precisa virar programador.</strong> Precisa de uma página profissional que resolve isso por você.</p>
     </div>
   </section>
 
