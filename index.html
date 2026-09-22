@@ -83,6 +83,24 @@ fbq('track', 'PageView');
   .price-tag { font-size: 15px; color: var(--muted); margin-bottom: 18px; }
   .price-tag b { font-family: 'Space Grotesk', sans-serif; font-size: 22px; color: #fff; }
   .race-disclaimer { font-size: 11px; color: var(--muted-2); text-align: center; margin: 10px 0 0; }
+
+  .speed-proof {
+    display: flex; align-items: center; gap: 16px; background: var(--surface);
+    border: 1px solid rgba(52,211,153,0.3); border-radius: 16px; padding: 18px 20px; margin-top: 14px;
+    text-align: left;
+  }
+  .speed-proof-badge {
+    flex-shrink: 0; width: 52px; height: 52px; border-radius: 12px;
+    background: linear-gradient(135deg, #34D399, #22D3EE); color: #062B22;
+    font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .speed-proof-title { font-size: 14px; font-weight: 700; margin: 0 0 2px; }
+  .speed-proof-sub { font-size: 11.5px; color: var(--muted); margin: 0 0 10px; line-height: 1.4; }
+  .speed-proof-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .speed-proof-stats div { text-align: center; }
+  .speed-proof-stats b { display: block; font-size: 14px; font-family: 'Space Grotesk', sans-serif; color: #34D399; }
+  .speed-proof-stats span { font-size: 9.5px; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.02em; }
   .dor-text { max-width: 520px; margin: 0 auto; }
   .dor-text p { font-size: 15px; line-height: 1.7; color: #E5DFFA; margin: 0 0 16px; }
   .dor-text p strong { color: #fff; }
@@ -431,6 +449,20 @@ fbq('track', 'PageView');
         </div>
         <div class="race-tap" id="race-tap">toque para ver de novo</div>
         <p class="race-disclaimer">Demonstração ilustrativa de como o carregamento afeta a experiência — não é um teste de velocidade medido.</p>
+      </div>
+
+      <div class="speed-proof">
+        <div class="speed-proof-badge">A</div>
+        <div class="speed-proof-body">
+          <p class="speed-proof-title">Teste real, sem enfeite</p>
+          <p class="speed-proof-sub">Medido no GTmetrix, numa página construída com a mesma estrutura técnica da Elite</p>
+          <div class="speed-proof-stats">
+            <div><b>98%</b><span>Desempenho</span></div>
+            <div><b>97%</b><span>Estrutura</span></div>
+            <div><b>872ms</b><span>Carregamento</span></div>
+            <div><b>43ms</b><span>Bloqueio</span></div>
+          </div>
+        </div>
       </div>
 
       <div class="callout">
