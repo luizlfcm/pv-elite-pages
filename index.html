@@ -85,7 +85,7 @@ fbq('track', 'PageView');
   .race-disclaimer { font-size: 11px; color: var(--muted-2); text-align: center; margin: 10px 0 0; }
 
   .speed-proof {
-    display: flex; align-items: center; gap: 16px; background: var(--surface);
+    display: flex; align-items: flex-start; gap: 16px; background: var(--surface);
     border: 1px solid rgba(52,211,153,0.3); border-radius: 16px; padding: 18px 20px; margin-top: 14px;
     text-align: left;
   }
@@ -98,6 +98,10 @@ fbq('track', 'PageView');
   .speed-proof-title { font-size: 14px; font-weight: 700; margin: 0 0 2px; }
   .speed-proof-sub { font-size: 11.5px; color: var(--muted); margin: 0 0 10px; line-height: 1.4; }
   .speed-proof-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  @media (max-width: 380px) {
+    .speed-proof { flex-direction: column; }
+    .speed-proof-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  }
   .speed-proof-stats div { text-align: center; }
   .speed-proof-stats b { display: block; font-size: 14px; font-family: 'Space Grotesk', sans-serif; color: #34D399; }
   .speed-proof-stats span { font-size: 9.5px; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.02em; }
