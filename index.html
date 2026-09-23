@@ -95,16 +95,17 @@ fbq('track', 'PageView');
     font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700;
     display: flex; align-items: center; justify-content: center;
   }
+  .speed-proof-body { flex: 1; min-width: 0; }
   .speed-proof-title { font-size: 14px; font-weight: 700; margin: 0 0 2px; }
   .speed-proof-sub { font-size: 11.5px; color: var(--muted); margin: 0 0 10px; line-height: 1.4; }
-  .speed-proof-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .speed-proof-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
   @media (max-width: 380px) {
     .speed-proof { flex-direction: column; }
-    .speed-proof-stats { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .speed-proof-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
   }
   .speed-proof-stats div { text-align: center; }
   .speed-proof-stats b { display: block; font-size: 14px; font-family: 'Space Grotesk', sans-serif; color: #34D399; }
-  .speed-proof-stats span { font-size: 9.5px; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.02em; }
+  .speed-proof-stats span { font-size: 9px; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.01em; word-break: break-word; overflow-wrap: break-word; }
   .dor-text { max-width: 520px; margin: 0 auto; }
   .dor-text p { font-size: 15px; line-height: 1.7; color: #E5DFFA; margin: 0 0 16px; }
   .dor-text p strong { color: #fff; }
@@ -463,7 +464,7 @@ fbq('track', 'PageView');
           <div class="speed-proof-stats">
             <div><b>98%</b><span>Desempenho</span></div>
             <div><b>97%</b><span>Estrutura</span></div>
-            <div><b>872ms</b><span>Carregamento</span></div>
+            <div><b>872ms</b><span>Carga</span></div>
             <div><b>43ms</b><span>Bloqueio</span></div>
           </div>
         </div>
