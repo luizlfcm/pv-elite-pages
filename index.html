@@ -984,8 +984,9 @@ fbq('track', 'PageView');
     }
   })()
 
-  // ===== Cliques de CTA disparam InitiateCheckout =====
-  document.querySelectorAll('a[href="#planos"], .plan a').forEach((el) => {
+  // ===== Cliques em links reais de checkout disparam InitiateCheckout =====
+  // (não nos botões que só rolam até #planos — esses não são checkout de verdade)
+  document.querySelectorAll('a[href*="pay.hotmart.com"]').forEach((el) => {
     el.addEventListener('click', () => {
       if (typeof fbq !== 'undefined') fbq('track', 'InitiateCheckout')
     })
